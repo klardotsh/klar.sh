@@ -1,5 +1,6 @@
-.PHONY: tf-deps tf-deps-clean tf-init tf-plan tf-apply
+.PHONY: tf-deps tf-deps-clean tf-init tf-plan tf-apply services-up services-down
 
+ALL_SERVICES := $(shell find ./services -name "*.y*ml")
 PUBLIC_IP ?= $(shell curl https://ifconfig.me 2>/dev/null)
 
 .tfdeps:
@@ -25,3 +26,9 @@ tf-plan: tf-init
 
 tf-apply: tf-init
 	terraform apply -var="public_ip=$(PUBLIC_IP)"
+
+services-up:
+	@echo $(ALL_SERVICES) | xargs -i docker-compose -f {} up -d
+
+services-destroy:
+	@echo $(ALL_SERVICES) | xargs -i docker-compose -f {} down

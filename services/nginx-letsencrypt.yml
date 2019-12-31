@@ -1,0 +1,31 @@
+---
+version: "2"
+services:
+    nginx-letsencrypt:
+        # use my fork until
+        # https://github.com/linuxserver/docker-letsencrypt/pull/391
+        # merges
+        image: klardotsh/linuxserver_letsencrypt
+        container_name: letsencrypt
+        cap_add:
+            - NET_ADMIN
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=UTC
+            - URL=klar.sh
+            - SUBDOMAINS=wildcard
+            - VALIDATION=dns
+            - DNSPLUGIN=gandi
+            - EMAIL=josh@klar.sh
+            - DHLEVEL=2048
+            - ONLY_SUBDOMAINS=false
+            #- EXTRA_DOMAINS=kmkfw.io
+            - STAGING=false
+        volumes:
+            - /dockervols/nginx-letsencrypt:/config
+            - ./nginx-default.conf:/config/nginx/site-confs/default
+        ports:
+            - 443:443
+        network_mode: "host"
+        restart: unless-stopped
