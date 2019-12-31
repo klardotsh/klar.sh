@@ -1,5 +1,8 @@
 # klardotsh's infrastructure
 
+> Yes, I'm aware that the URL of the canonical copy of this repo,
+> `https://git.klar.sh/klardotsh/klar.sh`, is comically redundant...
+
 This repository is a monorepo containing basically everything that publicly
 exists at my domain `klar.sh`, including Terraform-driven DNS records, and
 `docker-compose`-based service definitions.
