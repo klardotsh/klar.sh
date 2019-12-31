@@ -1,0 +1,5 @@
+.env
+.tfdeps
+.tfdeps-build
+.terraform
+*.tfstate*
