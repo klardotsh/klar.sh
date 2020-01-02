@@ -2,10 +2,7 @@
 version: "2"
 services:
     nginx-letsencrypt:
-        # use my fork until
-        # https://github.com/linuxserver/docker-letsencrypt/pull/391
-        # merges
-        image: klardotsh/linuxserver_letsencrypt
+        image: linuxserver/letsencrypt:1.0.0-ls85
         container_name: letsencrypt
         cap_add:
             - NET_ADMIN
