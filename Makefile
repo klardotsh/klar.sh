@@ -8,7 +8,7 @@ PUBLIC_IP ?= $(shell curl https://ifconfig.me 2>/dev/null)
 	mkdir -p .tfdeps-build
 	-rm -rf .tfdeps-build/terraform-provider-gandi
 	git clone https://github.com/tiramiseb/terraform-provider-gandi.git .tfdeps-build/terraform-provider-gandi
-	cd .tfdeps-build/terraform-provider-gandi && go build -o ~/.terraform.d/plugins/terraform-provider-gandi
+	cd .tfdeps-build/terraform-provider-gandi && git checkout abdf9a3c914f734b7293a62382fe3f5ff882c871 && go build -o ~/.terraform.d/plugins/terraform-provider-gandi
 	touch .tfdeps
 
 tf-deps: .tfdeps
