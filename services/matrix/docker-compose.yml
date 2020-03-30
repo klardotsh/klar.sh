@@ -1,0 +1,13 @@
+---
+version: "2"
+services:
+    matrix-synapse:
+        image: matrixdotorg/synapse:v1.12.0-py3
+        container_name: matrix-synapse
+        volumes:
+            - /dockervols/matrix:/data
+            - /data/docker_volumes/matrix-media-uploads/media:/data/media
+        ports:
+            - 8008:8008
+        network_mode: "host"
+        restart: unless-stopped

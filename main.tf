@@ -46,20 +46,11 @@ resource "gandi_zonerecord" "git" {
 resource "gandi_zonerecord" "matrix" {
 	zone = gandi_zone.klar_sh.id
 	name = "matrix"
+	# this can't be a CNAME or the SRV record below will break
 	type = "A"
 	ttl = 3600
 	values = [
-		"68.183.251.88"
-	]
-}
-
-resource "gandi_zonerecord" "matrix_1" {
-	zone = gandi_zone.klar_sh.id
-	name = "1.matrix"
-	type = "A"
-	ttl = 3600
-	values = [
-		"104.248.219.201"
+		var.public_ip
 	]
 }
 
@@ -69,7 +60,7 @@ resource "gandi_zonerecord" "matrix_srv" {
 	type = "SRV"
 	ttl = 3600
 	values = [
-		"1 100 443 matrix.klar.sh."
+		"1 100 4443 matrix.klar.sh."
 	]
 }
 
