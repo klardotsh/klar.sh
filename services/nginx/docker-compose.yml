@@ -2,7 +2,7 @@
 version: "2"
 services:
     nginx-letsencrypt:
-        image: linuxserver/letsencrypt:1.0.0-ls85
+        image: linuxserver/letsencrypt:1.3.0-ls105
         container_name: letsencrypt
         cap_add:
             - NET_ADMIN
