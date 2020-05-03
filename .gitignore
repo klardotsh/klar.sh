@@ -3,3 +3,8 @@
 .tfdeps-build
 .terraform
 *.tfstate*
+
+# for the time being this can't be tracked as it has secrets.
+# ultimately this file should be templated with the secrets living in the
+# environment somewhere, and the rest of the file can safely be tracked in git
+services/gitea/app.ini

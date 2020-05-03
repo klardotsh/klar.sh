@@ -1,0 +1,18 @@
+---
+version: "2"
+services:
+    server:
+        image: gitea/gitea:1.11.4
+        environment:
+            - USER_UID=1000
+            - USER_GID=1000
+        volumes:
+            # plain old repos go on SSD
+            - /dockervols/gitea:/data
+            # LFS stuff is huge - off to spinners
+            - /data/docker_volumes/gitea/git/lfs:/data/git/lfs
+            - ./app.ini:/data/gitea/conf/app.ini
+        ports:
+            - "33000:3000"
+            - "2222:22"
+        restart: always
