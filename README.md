@@ -15,3 +15,9 @@ as it requests my server's WAN address at the `apply` stage.
 This repo is released under the [Creative Commons Zero 1.0
 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license, as close
 to public domain as is legally possible worldwide.
+
+> This repo currently depends on
+> `terraform-provider-gandi@891e660c01d18cb458ccdef5ac02d192c61020a3`, and will
+> not work with newer versions. Beyond that, the provider seems to have been
+> removed from the Terraform plugins registry (at least under the name this repo
+> expected), so building from source is currently the *only* option.

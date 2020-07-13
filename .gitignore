@@ -3,6 +3,7 @@
 .tfdeps-build
 .terraform
 *.tfstate*
+terraform.d
 
 # for the time being this can't be tracked as it has secrets.
 # ultimately this file should be templated with the secrets living in the
