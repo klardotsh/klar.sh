@@ -2,7 +2,7 @@
 version: "2"
 services:
     matrix-synapse:
-        image: matrixdotorg/synapse:v1.12.0-py3
+        image: matrixdotorg/synapse:v1.17.0-py3
         container_name: matrix-synapse
         volumes:
             - /dockervols/matrix:/data
