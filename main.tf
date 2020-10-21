@@ -13,6 +13,15 @@ resource "gandi_zone" "klar_sh" {
   name = "klar.sh zone"
 }
 
+resource "gandi_zonerecord" "srv_dandelion" {
+  zone = gandi_zone.klar_sh.id
+  name = "dandelion.srv"
+  type = "A"
+  ttl  = 3600
+  values = [
+    "54.36.105.50",
+  ]
+}
 resource "gandi_zonerecord" "home" {
   zone = gandi_zone.klar_sh.id
   name = "home"
@@ -36,6 +45,16 @@ resource "gandi_zonerecord" "minecraft" {
 resource "gandi_zonerecord" "git" {
   zone = gandi_zone.klar_sh.id
   name = "git"
+  type = "CNAME"
+  ttl  = 3600
+  values = [
+    "home.klar.sh."
+  ]
+}
+
+resource "gandi_zonerecord" "moveinscript" {
+  zone = gandi_zone.klar_sh.id
+  name = "moveinscript"
   type = "CNAME"
   ttl  = 3600
   values = [
