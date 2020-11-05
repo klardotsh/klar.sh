@@ -1,14 +1,3 @@
-terraform {
-  // set up s3 backend per https://www.terraform.io/docs/backends/types/s3.html
-  // don't want tfstate on a single point of failure
-}
-
-variable "public_ip" {
-  type = string
-}
-
-provider "gandi" {}
-
 resource "gandi_zone" "klar_sh" {
   name = "klar.sh zone"
 }
