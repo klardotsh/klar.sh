@@ -3,8 +3,6 @@ terraform {
   // don't want tfstate on a single point of failure
 }
 
-provider "gandi" {}
-
 provider "digitalocean" {
   version = "~> 2.0.2"
 }
