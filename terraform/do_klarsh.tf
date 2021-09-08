@@ -29,6 +29,15 @@ resource "digitalocean_record" "home" {
   value  = local.external_server_ips.home
 }
 
+// work around https://github.com/matrix-org/matrix-federation-tester/issues/93, basically, but realistically klar.sh root going to home is fine
+resource "digitalocean_record" "root" {
+  domain = digitalocean_domain.klarsh.name
+  name = "@"
+  type = "A"
+  ttl = 3600
+  value = local.external_server_ips.home
+}
+
 resource "digitalocean_record" "minecraft" {
   domain = digitalocean_domain.klarsh.name
   name   = "minecraft"
@@ -46,6 +55,14 @@ resource "digitalocean_record" "git" {
   value = "${digitalocean_record.srv_external["home"].fqdn}."
 }
 
+resource "digitalocean_record" "ci" {
+  domain = digitalocean_domain.klarsh.name
+  name   = "ci"
+  type   = "CNAME"
+  ttl    = 3600
+  value  = "${digitalocean_record.srv_external["home"].fqdn}."
+}
+
 resource "digitalocean_record" "moveinscript" {
   domain = digitalocean_domain.klarsh.name
   name   = "moveinscript"
@@ -54,32 +71,12 @@ resource "digitalocean_record" "moveinscript" {
   value  = "${digitalocean_record.srv_external["home"].fqdn}."
 }
 
-resource "digitalocean_record" "irc" {
-  domain = digitalocean_domain.klarsh.name
-  name   = "irc"
-  type   = "CNAME"
-  ttl    = 3600
-  value  = "${digitalocean_record.srv_external["home"].fqdn}."
-}
-
 resource "digitalocean_record" "matrix" {
   domain = digitalocean_domain.klarsh.name
   name   = "matrix"
-  # this can't be a CNAME or the SRV record below will break
-  type  = "A"
+  type  = "CNAME"
   ttl   = 3600
-  value = local.external_server_ips.home
-}
-
-resource "digitalocean_record" "matrix_srv_1" {
-  domain   = digitalocean_domain.klarsh.name
-  name     = "_matrix._tcp"
-  type     = "SRV"
-  ttl      = 3600
-  priority = 1
-  weight   = 100
-  port     = 4443
-  value    = "${digitalocean_record.matrix.fqdn}."
+  value = "${digitalocean_record.srv_external["home"].fqdn}."
 }
 
 resource "digitalocean_record" "keybase_verification" {
