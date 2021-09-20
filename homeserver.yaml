@@ -1,0 +1,82 @@
+no_tls: true
+server_name: klar.sh
+pid_file: /run/synapse-homeserver.pid
+public_baseurl: https://matrix.klar.sh/
+listeners:
+  - port: 8448
+    bind_address: '10.42.69.2'
+    type: http
+    tls: false
+    x_forwarded: true
+    resources:
+      - names:
+          - client
+          - federation
+        compress: false
+database:
+  name: sqlite3
+  args:
+    database: /var/lib/synapse/homeserver.db
+event_cache_size: 10K
+verbose: 0
+# log_config: /nix/store/zc10h40shgrr55qhm14jqywrgih3wwda-log_config.yaml
+media_store_path: /var/lib/synapse/media
+uploads_path: /var/lib/synapse/uploads
+max_upload_size: 1024M
+max_image_pixels: 64M
+dynamic_thumbnails: true
+url_preview_enabled: true
+recaptcha_private_key: ''
+recaptcha_public_key: ''
+enable_registration_captcha: false
+turn_uris: []
+turn_shared_secret: ''
+enable_registration: false
+recaptcha_siteverify_api: https://www.google.com/recaptcha/api/siteverify
+turn_user_lifetime: 1h
+user_creation_max_duration: 1209600000
+bcrypt_rounds: 12
+allow_guest_access: false
+account_threepid_delegates: null
+room_invite_state_types:
+  - m.room.join_rules
+  - m.room.canonical_alias
+  - m.room.avatar
+  - m.room.name
+expire_access_token: false
+enable_metrics: false
+report_stats: false
+signing_key_path: /var/lib/synapse/klar.sh.signing.key
+key_refresh_interval: 1d
+perspectives:
+  servers:
+    matrix.org:
+      verify_keys:
+        ed25519:auto:
+          key: Noi6WqcDj0QmPxCNQqgezwTlBKrfqehY1u2FyWP9uYw
+url_preview_url_blacklist:
+  # blacklist any URL with a literal IPv4 address
+  - netloc: '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'
+url_preview_ip_range_blacklist:
+  - '127.0.0.0/8'
+  - '10.0.0.0/8'
+  - '172.16.0.0/12'
+  - '192.168.0.0/16'
+  - '100.64.0.0/10'
+  - '192.0.0.0/24'
+  - '169.254.0.0/16'
+  - '192.88.99.0/24'
+  - '198.18.0.0/15'
+  - '192.0.2.0/24'
+  - '198.51.100.0/24'
+  - '203.0.113.0/24'
+  - '224.0.0.0/4'
+  - '::1/128'
+  - 'fe80::/10'
+  - 'fc00::/7'
+  - '2001:db8::/32'
+  - 'ff00::/8'
+  - 'fec0::/10'
+# The largest allowed URL preview spidering size in bytes
+max_spider_size: 10M
+session_lifetime: 24h
