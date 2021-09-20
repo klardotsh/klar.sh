@@ -7,6 +7,14 @@ resource "digitalocean_domain" "klarsh" {
   name = "klar.sh"
 }
 
+resource "digitalocean_record" "bouncer" {
+  domain = digitalocean_domain.klarsh.name
+  name   = "bouncer"
+  type   = "A"
+  ttl    = 3600
+  value  = linode_instance.bouncer.ip_address
+}
+
 // create a wherever.srv.klar.sh record for all external servers
 resource "digitalocean_record" "srv_external" {
   for_each = local.external_server_ips
@@ -32,10 +40,10 @@ resource "digitalocean_record" "home" {
 // work around https://github.com/matrix-org/matrix-federation-tester/issues/93, basically, but realistically klar.sh root going to home is fine
 resource "digitalocean_record" "root" {
   domain = digitalocean_domain.klarsh.name
-  name = "@"
-  type = "A"
-  ttl = 3600
-  value = local.external_server_ips.home
+  name   = "@"
+  type   = "A"
+  ttl    = 3600
+  value  = local.external_server_ips.home
 }
 
 resource "digitalocean_record" "minecraft" {
@@ -74,9 +82,9 @@ resource "digitalocean_record" "moveinscript" {
 resource "digitalocean_record" "matrix" {
   domain = digitalocean_domain.klarsh.name
   name   = "matrix"
-  type  = "CNAME"
-  ttl   = 3600
-  value = "${digitalocean_record.srv_external["home"].fqdn}."
+  type   = "CNAME"
+  ttl    = 3600
+  value  = "${digitalocean_record.srv_external["home"].fqdn}."
 }
 
 resource "digitalocean_record" "keybase_verification" {

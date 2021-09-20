@@ -4,13 +4,23 @@ terraform {
 
   required_providers {
     digitalocean = {
-      source = "digitalocean/digitalocean"
+      source  = "digitalocean/digitalocean"
       version = "2.11"
     }
 
     vultr = {
-      source = "vultr/vultr"
+      source  = "vultr/vultr"
       version = "1.5"
+    }
+
+    linode = {
+      source  = "linode/linode"
+      version = "1.21"
+    }
+
+    zerotier = {
+      source  = "zerotier/zerotier"
+      version = "1.1"
     }
   }
 }
