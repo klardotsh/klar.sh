@@ -10,11 +10,11 @@ This is the website hosted at the root of `http(s)?://(www.)?klar.sh`.
 
 ## License
 
-All code, written word, and media here are [Copyfree](http://copyfree.org/) and
+All code, written word, and media here are [Copyfree](https://copyfree.org/) and
 released under the [Creative Commons Zero 1.0
 dedication](https://creativecommons.org/publicdomain/zero/1.0/) unless otherwise noted.
 
 This repository embeds the following third-party components under their own licenses:
 
-- `rgz.ee/bin/ssg6`. BSD-/ISC-/MIT-style permissive license. Retrieved 04
-  October 2021.
+- [`rgz.ee/bin/ssg6`](https://www.romanzolotarev.com/ssg.html), which has a
+  BSD-/ISC-/MIT-style permissive license. Retrieved 04 October 2021 from.
