@@ -9,6 +9,9 @@ klar.sh {
 		body "{ \"m.server\": \"matrix.klar.sh:443\" }"
 		close
 	}
+
+	root * /srv/www
+	file_server
 }
 
 matrix.klar.sh {
