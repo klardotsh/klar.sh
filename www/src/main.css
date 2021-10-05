@@ -1,0 +1,106 @@
+html {
+	background-color: #eee;
+	color: #444;
+}
+
+body {
+	font-size: 13pt;
+	max-width: 650px;
+	margin: 40px auto;
+	padding: 0 10px;
+}
+
+/* these two media blocks are to make Chromium suck less at rendering
+ * downscaled images: https://stackoverflow.com/a/69137897
+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+  img {
+    image-rendering: -webkit-optimize-contrast !important;
+  }
+}
+/* Unset for Safari 11+ */
+@media not all and (min-resolution:.001dpcm) {
+	@supports (-webkit-appearance:none) and (stroke-color:transparent) {
+		img {
+			image-rendering: unset !important;
+		}
+	}
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.5;
+}
+
+a {
+	color: #057;
+}
+
+header {
+	border-bottom: 0.5em dotted lightgrey;
+}
+
+header h1 {
+	font-family: sans-serif;
+}
+
+header author {
+	font-size: 11pt;
+	text-align: center;
+}
+
+nav {
+	overflow: auto;
+	text-align: center;
+	margin: auto;
+}
+
+nav::after {
+	clear: both;
+}
+
+nav ul {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+nav ul li {
+	display: inline;
+	text-transform: lowercase;
+	list-style-type: none;
+	margin-right: 0.5em;
+	font-size: 11pt;
+}
+
+nav ul li::last {
+	margin-right: 0;
+}
+
+nav ul li span {
+	display: inline-block;
+}
+
+nav ul li span::before {
+	content: "[ ";
+}
+nav ul li span::after {
+	content: " ]";
+}
+
+img.float-left {
+	float: left;
+	max-width: 25%;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+p::after {
+	clear: both;
+}
+
+#content {
+	line-height: 1.4;
+}
