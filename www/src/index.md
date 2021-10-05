@@ -30,7 +30,7 @@ privacy-disrespecting and hypercapitalist aspects), cars and the policies
 written for them, and hot weather.
 
 If you need to contact me, `josh` at this domain is a working email address, or
-you can holler at me in more ephemeral form <a
+you can holler at me in more ephemeral form <a rel="me"
 href="//merveilles.town/@klardotsh">on Merveilles, a Mastodon community</a>.
 
 ## About this site
