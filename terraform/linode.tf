@@ -199,3 +199,108 @@ resource "linode_firewall" "synapse_firewall" {
 
   linodes = [linode_instance.synapse.id]
 }
+
+resource "linode_instance" "starfinder1" {
+  label            = "starfinder1"
+  region           = "us-west"
+  type             = "g6-standard-2"
+  authorized_users = [data.linode_profile.me.username]
+  image            = "linode/alpine3.15"
+}
+
+/*
+How this box was set up:
+
+ssh root@starfinder1.klar.sh
+echo starfinder1 > /etc/hostname
+hostname -F /etc/hostname
+
+# needed because apk add will hang otherwise. can we finally stop trying to
+# make ipv6 happen? the answer is almost always "disable it if you want
+# anything to work"
+#
+# quasi-related: https://github.com/gliderlabs/docker-alpine/issues/307
+sysctl net.ipv6.conf.all.disable_ipv6=1
+echo 'net.ipv6.conf.all.disable_ipv6 = 1' >> /etc/sysctl.conf
+
+apk add --update zerotier-one docker docker-compose
+rc-update add zerotier-one default
+rc-update add docker default
+rc-service zerotier-one start
+rc-service docker start
+zerotier-cli info # copy out the ID here for zerotier.tf
+zerotier-cli join <network id from zerotier.tf output>
+reboot # because alpine by default doesn't have /dev hotplugging (I guess? busybox, eh?)
+ */
+
+resource "linode_firewall" "starfinder1_firewall" {
+  label           = "starfinder1"
+  inbound_policy  = "DROP"
+  outbound_policy = "ACCEPT"
+
+  inbound {
+    label    = "allow-ssh-tcp"
+    action   = "ACCEPT"
+    protocol = "TCP"
+    ports    = "22"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-ssh-udp"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "22"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-factorio-1"
+    action   = "ACCEPT"
+    protocol = "TCP"
+    ports    = "34197"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-factorio-2"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "34197"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-factorio-3"
+    action   = "ACCEPT"
+    protocol = "TCP"
+    ports    = "27015"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-factorio-4"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "27015"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-zt-udp"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "9993"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+
+  linodes = [linode_instance.starfinder1.id]
+}

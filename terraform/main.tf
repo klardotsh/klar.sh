@@ -43,7 +43,6 @@ variable "public_ip" {
 locals {
   external_server_ips = {
     dandelion = "54.36.105.50"
-    home      = var.public_ip
   }
 }
 

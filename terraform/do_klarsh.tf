@@ -23,6 +23,22 @@ resource "digitalocean_record" "synapse" {
   value  = linode_instance.synapse.ip_address
 }
 
+resource "digitalocean_record" "factorio1" {
+  domain = digitalocean_domain.klarsh.name
+  name   = "factorio1.srv"
+  type   = "A"
+  ttl    = 3600
+  value  = linode_instance.starfinder1.ip_address
+}
+
+resource "digitalocean_record" "starfinder1" {
+  domain = digitalocean_domain.klarsh.name
+  name   = "starfinder1.srv"
+  type   = "A"
+  ttl    = 3600
+  value  = linode_instance.starfinder1.ip_address
+}
+
 // create a wherever.srv.klar.sh record for all external servers
 resource "digitalocean_record" "srv_external" {
   for_each = local.external_server_ips
@@ -34,18 +50,6 @@ resource "digitalocean_record" "srv_external" {
   value  = each.value
 }
 
-// backwards-compat dupe of home.srv.klar.sh
-// this could probably become a CNAME but honestly I don't feel like finding
-// out the hard way what breaks when I do this
-resource "digitalocean_record" "home" {
-  domain = digitalocean_domain.klarsh.name
-  name   = "home"
-  type   = "A"
-  ttl    = 3600
-  value  = local.external_server_ips.home
-}
-
-// work around https://github.com/matrix-org/matrix-federation-tester/issues/93, basically, but realistically klar.sh root going to home is fine
 resource "digitalocean_record" "root" {
   domain = digitalocean_domain.klarsh.name
   name   = "@"
@@ -54,12 +58,12 @@ resource "digitalocean_record" "root" {
   value  = linode_instance.bouncer.ip_address
 }
 
-resource "digitalocean_record" "minecraft" {
+resource "digitalocean_record" "starfinder1_http" {
   domain = digitalocean_domain.klarsh.name
-  name   = "minecraft"
+  name   = "starfinder-first"
   type   = "CNAME"
   ttl    = 3600
-  value  = "${digitalocean_record.srv_external["home"].fqdn}."
+  value = "@"
 }
 
 resource "digitalocean_record" "git" {
