@@ -12,4 +12,3 @@ all: $(OUTPUT_DIR)
 $(OUTPUT_DIR):
 	mkdir -p $(OUTPUT_DIR)
 	./ssg6 $(INPUT_DIR) $(OUTPUT_DIR) $(SITE_TITLE) $(BASE_URL)
-	cp ./headshot-*x.jpg $(OUTPUT_DIR)/
