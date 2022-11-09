@@ -3,6 +3,18 @@ html {
 	color: #444;
 }
 
+@media (prefers-color-scheme: dark) {
+	html {
+		color: #bbb;
+		background-color: #111;
+	}
+
+	a, a:link {
+		color: #eee;
+	}
+}
+
+
 body {
 	font-size: 13pt;
 	max-width: 650px;
@@ -43,11 +55,18 @@ header {
 
 header h1 {
 	font-family: sans-serif;
+	float: left;
+	margin-right: 1em;
 }
 
 header author {
 	font-size: 11pt;
 	text-align: center;
+	display: block;
+}
+
+header author::after {
+	clear: both;
 }
 
 nav {

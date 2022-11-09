@@ -1,37 +1,16 @@
 # Howdy
 
-You've reached the great abyss known as @klardotsh's website. Things are very
-much under construction at the moment, sorry about that. Some day, likely after
-I've attempted and failed to enact global peace, I'll have this page actually
-fleshed out and looking useful. Probably. Maybe.
+You've reached the great abyss known as @klardotsh's website and digital
+garden. Given that it's winter, not much grows here yet, but I'm working on it.
 
-## Who am I? What's my deal?
+On <a rel="me" href="https://merveilles.town/@klardotsh">my Mastodon</a>,
+you'll find short utterances into the void in the meantime about boats, living
+on them, tech, shouting at it, programming languages, designing them, and every
+so often coffee, and how much of it is necessary to survive a PNW winter.
 
-<img
-	class="float-left"
-	loading="lazy"
-	alt="headshot of yours truly"
-	srcset="
-	/headshot-1x.jpg 1x,
-	/headshot-2x.jpg 2x,
-	/headshot-3x.jpg 3x
-	"
-	src="/headshot-1x.jpg"
-/>
-
-I'm Josh. I write software and/or torment servers for a living and to some
-extents as a hobby. I admire simplicity, modularity, entropy, whimsy, ethics,
-empathy, and human-scale spaces and systems. I sail boats, I volunteer with
-STEM education programs, I ride bikes, I occasionally dabble with music
-production, and I am known to embrace the rain and gloom and scenery and coffee
-of the Pacific Northwest. I am also known to shout my disdain for systems of
-oppression, the state of modern computing (particularly its
-privacy-disrespecting and hypercapitalist aspects), cars and the policies
-written for them, and hot weather.
-
-If you need to contact me, `josh` at this domain is a working email address, or
-you can holler at me in more ephemeral form <a rel="me"
-href="//merveilles.town/@klardotsh">on Merveilles, a Mastodon community</a>.
+If you need to contact me, `josh` at this domain is a working email address.
+Generally, I'm not accepting contract work right now (or through the end of
+2022), though I have plans in the works to that end in the new year perhaps.
 
 ## About this site
 
