@@ -1,12 +1,24 @@
 html {
 	background-color: #eee;
 	color: #444;
+	font-family: serif;
+}
+
+a, a:link {
+	color: #444;
 }
 
 @media (prefers-color-scheme: dark) {
 	html {
-		color: #bbb;
-		background-color: #111;
+		/* if this scheme looks familiar it's because it's the same as
+		 * vulpes.one's gemini proxy. several design decisions were borrowed
+		 * from there, actually... */
+		color: #cad1d8;
+		background-color: #14171a;
+	}
+
+	html * {
+		caret-color: #888;
 	}
 
 	a, a:link {
@@ -17,9 +29,16 @@ html {
 
 body {
 	font-size: 13pt;
-	max-width: 650px;
-	margin: 40px auto;
+	margin-top: 0;
 	padding: 0 10px;
+	padding-top: 0;
+}
+
+@media only screen and (min-width: 700px) {
+	body {
+		max-width: 650px;
+		margin: 40px auto;
+	}
 }
 
 /* these two media blocks are to make Chromium suck less at rendering
@@ -39,34 +58,13 @@ body {
 	}
 }
 
-h1,
-h2,
-h3 {
-	line-height: 1.5;
-}
-
-a {
-	color: #057;
-}
-
 header {
-	border-bottom: 0.5em dotted lightgrey;
+	padding-bottom: 0.5em;
+	border-bottom: 0.15em dotted lightgrey;
 }
 
-header h1 {
-	font-family: sans-serif;
-	float: left;
-	margin-right: 1em;
-}
-
-header author {
-	font-size: 11pt;
-	text-align: center;
-	display: block;
-}
-
-header author::after {
-	clear: both;
+header ul li img {
+	max-height: 5em;
 }
 
 nav {
@@ -90,8 +88,9 @@ nav ul li {
 	display: inline;
 	text-transform: lowercase;
 	list-style-type: none;
-	margin-right: 0.5em;
-	font-size: 11pt;
+	margin-right: 0.75em;
+	font-size: 95%;
+	font-family: monospace;
 }
 
 nav ul li::last {
@@ -100,13 +99,6 @@ nav ul li::last {
 
 nav ul li span {
 	display: inline-block;
-}
-
-nav ul li span::before {
-	content: "[ ";
-}
-nav ul li span::after {
-	content: " ]";
 }
 
 img.float-left {
@@ -121,5 +113,48 @@ p::after {
 }
 
 #content {
-	line-height: 1.4;
+	line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-variant: small-caps;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+header .whoami {
+	border-bottom: none;
+}
+
+header .whoami h1 {
+	border-bottom: none;
+	font-variant: normal;
+	margin: 0.25em 0;
+}
+
+#content blockquote .tangential {
+	display: block;
+	border: 1px dotted;
+	padding: 0.5em;
+	text-align: center;
+	font-size: 85%;
+}
+
+@media only screen and (max-width: 700px) {
+	#content blockquote .tangential {
+		margin: 0;
+	}
+
+	#content blockquote {
+		margin: 0;
+	}
+}
+
+#content p img {
+	max-width: 100%;
+	width: 100%;
 }
