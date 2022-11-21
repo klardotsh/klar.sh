@@ -31,6 +31,12 @@ I will get back to you.
 Broadly speaking, I'm not currently accepting contract work, through the end of
 2022, though I have plans in the works to that end in the new year.
 
+## After you're done here...
+
+I have assembled a page of [recommended reading and
+watching](/further-reading.html) you can continue on to once you've exhausted
+the content here!
+
 ## About this site
 
 Unless otheriwse noted, all content on this site ([and the code powering
