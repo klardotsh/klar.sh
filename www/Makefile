@@ -16,7 +16,7 @@ $(OUTPUT_DIR):
 
 # A hackish helper script to dither images and then shrink every last bit out
 # of them, using https://entropymine.com/imageworsener/ (req. libpng) and
-# https://optipng.sourceforge.net/
+# https://github.com/shssoichiro/oxipng
 #
 # File names should be provided as env vars or as make args:
 #
@@ -39,3 +39,4 @@ worsen-image:
 		$(WORSEN_INPUT) \
 		$(WORSEN_OUTPUT)
 	optipng -o7 $(WORSEN_OUTPUT)
+	oxipng $(WORSEN_OUTPUT) --opt max --strip safe --zopfli
