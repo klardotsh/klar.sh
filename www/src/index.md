@@ -1,11 +1,11 @@
-Hi! I'm Josh (generally known online as klardotsh[^1]), a software developer,
-[liveaboard sailor](/cloudy-day.html), music enthusiast, competitive robotics
-commentator and referee, and dweller and explorer of the Cascadia bioregion.
-You may know of me from my work on the [KMK mechanical keyboard
-firmware](https://github.com/KMKfw/kmk_firmware), [the in-design gluumy
-programming language](https://github.com/klardotsh/gluumy), [a tongue-in-cheek
+Hi! I'm Josh (generally known online as klardotsh[^1]), a software
+developer[^2], [liveaboard sailor](/cloudy-day.html), music enthusiast,
+competitive robotics commentator and referee, and dweller and explorer of the
+Cascadia bioregion. You may know of me from my work on the [KMK mechanical
+keyboard firmware](https://github.com/KMKfw/kmk_firmware), [the in-design Gale
+programming language](https://github.com/klardotsh/gale), [a tongue-in-cheek
 software license](https://github.com/klardotsh/fork-off-public-license) that
-went fungal[^2] on Mastodon, or for the robotics nerds in the house, from my
+went fungal[^3] on Mastodon, or for the robotics nerds in the house, from my
 commentary work with [FIRST](https://firstinspires.org) and
 [VEX](https://vexrobotics.com) in the Pacific Northwest.
 
@@ -13,7 +13,11 @@ commentary work with [FIRST](https://firstinspires.org) and
     English, but the canonical pronounciation is "klar-dotshhhh". Exactly like
     you're shushing someone right after saying "dot".
 
-[^2]: "Posts on [Mastodon] don't go viral, they go fungal, because the
+[^2]: By dayjob title, I'm a Senior Platform Engineer, which means I wrangle
+    cloud infrastructure, developer tooling, and generally all the trenchwork
+    that lies at the "systems" level below the web API layer.
+
+[^3]: "Posts on [Mastodon] don't go viral, they go fungal, because the
     Fediverse is like the mycelium of mushrooms." -
     [Source](https://queer.party/@DelphineUnseen/109371670513551027)
 
@@ -28,8 +32,9 @@ If you need to contact me, `josh` at this domain is a working email address. My
 response times are generally measured in days to weeks, please be patient, but
 I will get back to you.
 
-Broadly speaking, I'm not currently accepting contract work, through the end of
-2022, though I have plans in the works to that end in the new year.
+I am currently "mostly" not accepting contract work, but if you think it's
+*really* something I should take a look at, email me and we'll figure something
+out. Timelines won't be super quick, I can promise that much.
 
 ## After you're done here...
 
