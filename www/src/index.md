@@ -28,9 +28,7 @@ utterances into the void in the meantime about boats, living on them, tech,
 shouting at it, programming languages, designing them, and every so often
 coffee, and how much of it is necessary to survive a PNW winter.
 
-If you need to contact me, `josh` at this domain is a working email address. My
-response times are generally measured in days to weeks, please be patient, but
-I will get back to you.
+My contact information is [linked from the navbar and here](/contact.html).
 
 I am currently "mostly" not accepting contract work, but if you think it's
 *really* something I should take a look at, email me and we'll figure something
