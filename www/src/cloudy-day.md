@@ -4,11 +4,56 @@
 WA, September 2021. Mainsail not present as it had recently been shredded in a
 violent storm.](/cloudy-day-sept2021.png)
 
-_Cloudy Day_ is a 1971 Challenger 32 masthead-sloop sailboat (which, because
-counting is overrated, is actually about 33ft length overall), whose
-sailor-nerd specs [can be found on
-SailboatData](https://sailboatdata.com/sailboat/challenger-32). It is also, as
-of fall 2022, my home.
+_Cloudy Day_ is a [1971 Challenger
+32](https://sailboatdata.com/sailboat/challenger-32) masthead-sloop sailboat
+(which, because counting is overrated, is actually about 33ft length overall).
+At a glance, here's how I currently have her outfitted:
+
+- **Hull**: Solid non-cored fibreglass. Thickness: thiccccq.
+- **Deck**: Fibreglass cored with 1/2" Coosa Bluewater 26 (previously 3/4"
+  plywood); mostly replaced spring 2023
+- **Sails**: One two-reef coastal cruising mainsail (replaced spring 2022), one
+  furling genoa (size and age unknown, guessing about 120% and "ancient"?)
+- **Aux. propulsion**: 10kW electric motor (48VDC -> 3-phase AC; kit purchased
+  from Thunderstruck EVs and installed summer 2022). Prop shaft is a standard
+  1" installed some time in the late '90s, propeller is a 2-fin of unknown age.
+- **Ground tackle**: Rocna 15kg anchor (spring 2023) and a whole, whole lotta
+  chain and rope (unmeasured quite yet). Backup/prior anchor is a ~15kg CQR. A
+  quite old Lewmar windlass + capstan exists but is currently unwired as of
+  writing, and may be getting torn out this summer. TBD.
+- **Batteries**: 48V 280Ah (~13.4kWh) LiFePO4, DIY assembled from 16x prismatic
+  cells; installed summer 2022 and finally correctly balanced spring 2023
+  (oops...)
+- **Other noteworthy electrical**: Victron MultiPlus-II 48/3000
+  inverter-charger (summer 2022), 2x Victron Orion 48/12-30 DC-DC converters
+  (summer 2022). SmartPlug 30A shore power inlet because [fires are bad, y'all:
+  read this entire novel, it's worth
+  it](https://forums.sailboatowners.com/threads/shore-power-smartplug-vs-1938-long-post.159471/)
+- **Solar setup**: 2x Renogy 175W monocrystalline rigid panels + 1x Renogy 100W
+  foldable monocrystalline portable panel (all spring 2023); 2x Renogy Boost
+  10A solar controllers (spring 2023)
+- **Instruments**: Airmar DST810 speed/depth/temperature transducer (summer
+  2022), 2x Garmin GNX20 instrument displays (spring 2023)
+- **Galley and cooking**: Origo 3000 denatured alcohol stove (acquired early
+  2022), Sunmaki 1800W induction cooktop (winter 2022), GoSun Sport solar stove
+  (spring 2023), and approximately 1.5 metric craptons of cast iron pots and
+  pans
+- **Heating**: While at the dock: two electric space heaters. While underway: a
+  Mr. Heater Little Buddy propane heater, for now, while I figure out a
+  woodstove plan and budget.
+- **Storage space**: Somehow, never enough, but *especially* in the dinette
+  area (I hope to rebuild this into a hybrid office-dining-living space
+  eventually) and in the galley (I need to build a pantry space just about
+  yesterday onboard, and struggle to store all my pans and dishes, even not
+  owning tons of them!)
+- **Charts**: While planning a trip, mostly OpenCPN and paper. While underway,
+  mostly Navionics for now, though I eventually intend to embed something into
+  the cockpit wall (either a Garmin plotter or a small display hooked up to an
+  ARM SBC running OpenCPN, TBD). Trip tracks are recorded with OSMAnd's trip
+  recording extension for now. Please clap: I finally stopped trying to
+  stubbornly use paper out in the cockpit...
+
+## Okay, now for storytime...
 
 > <span class="tangential">
 > Cloudy Day is actually my second sailboat, though the first was only briefly
