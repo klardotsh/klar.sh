@@ -9,18 +9,21 @@ _Cloudy Day_ is a [1971 Challenger
 (which, because counting is overrated, is actually about 33ft length overall).
 At a glance, here's how I currently have her outfitted:
 
-- **Hull**: Solid non-cored fibreglass. Thickness: thiccccq.
+- **Hull**: Solid non-cored fibreglass, averaging about 1/2" thick (it varies
+  somewhat).
 - **Deck**: Fibreglass cored with 1/2" Coosa Bluewater 26 (previously 3/4"
   plywood); mostly replaced spring 2023
 - **Sails**: One two-reef coastal cruising mainsail (replaced spring 2022), one
-  furling genoa (size and age unknown, guessing about 120% and "ancient"?)
+  furling genoa (size and age unknown, guessing about 130% and "ancient"?)
 - **Aux. propulsion**: 10kW electric motor (48VDC -> 3-phase AC; kit purchased
   from Thunderstruck EVs and installed summer 2022). Prop shaft is a standard
   1" installed some time in the late '90s, propeller is a 2-fin of unknown age.
-- **Ground tackle**: Rocna 15kg anchor (spring 2023) and a whole, whole lotta
-  chain and rope (unmeasured quite yet). Backup/prior anchor is a ~15kg CQR. A
-  quite old Lewmar windlass + capstan exists but is currently unwired as of
-  writing, and may be getting torn out this summer. TBD.
+- **Ground tackle**: Rocna 15kg anchor (spring 2023) attached to ~50ft of chain
+  and a further 250ft of nylon rope. Backup/prior anchor is a ~15kg CQR. The
+  anchor is currently entirely managed by hand - the windlass that came with
+  the boat both draws too much current for my 12V stepdowns, and was corroded
+  to the point of breakage and malfunction anyway, so it was removed in May
+  2023.
 - **Batteries**: 48V 280Ah (~13.4kWh) LiFePO4, DIY assembled from 16x prismatic
   cells; installed summer 2022 and finally correctly balanced spring 2023
   (oops...)
@@ -31,38 +34,41 @@ At a glance, here's how I currently have her outfitted:
   it](https://forums.sailboatowners.com/threads/shore-power-smartplug-vs-1938-long-post.159471/)
 - **Solar setup**: 2x Renogy 175W monocrystalline rigid panels + 1x Renogy 100W
   foldable monocrystalline portable panel (all spring 2023); 2x Renogy Boost
-  10A solar controllers (spring 2023)
+  10A solar controllers (spring 2023). Two more 50W flexible panels are being
+  added to the lifelines in summer 2023, very soon.
+- **Wind turbine**: 1x MarineKinetix MK4+ 400W turbine is on the way -
+  installing summer 2023!
 - **Instruments**: Airmar DST810 speed/depth/temperature transducer (summer
-  2022), 2x Garmin GNX20 instrument displays (spring 2023)
+  2022), 2x Garmin GNX20 instrument displays (spring 2023, though not installed
+  yet), LCJ CV7 anemometer (spring 2023, though not installed yet).
 - **Galley and cooking**: Origo 3000 denatured alcohol stove (acquired early
   2022), Sunmaki 1800W induction cooktop (winter 2022), GoSun Sport solar stove
   (spring 2023), and approximately 1.5 metric craptons of cast iron pots and
   pans
 - **Heating**: While at the dock: two electric space heaters. While underway: a
   Mr. Heater Little Buddy propane heater, for now, while I figure out a
-  woodstove plan and budget.
+  woodstove plan and budget. It's an exercise in [using blankets to heat
+  myself, not the
+  space](https://solar.lowtechmagazine.com/2015/02/restoring-the-old-way-of-warming-heating-people-not-places/).
 - **Storage space**: Somehow, never enough, but *especially* in the dinette
   area (I hope to rebuild this into a hybrid office-dining-living space
   eventually) and in the galley (I need to build a pantry space just about
   yesterday onboard, and struggle to store all my pans and dishes, even not
   owning tons of them!)
-- **Charts**: While planning a trip, mostly OpenCPN and paper. While underway,
-  mostly Navionics for now, though I eventually intend to embed something into
-  the cockpit wall (either a Garmin plotter or a small display hooked up to an
-  ARM SBC running OpenCPN, TBD). Trip tracks are recorded with OSMAnd's trip
-  recording extension for now. Please clap: I finally stopped trying to
-  stubbornly use paper out in the cockpit...
+- **Charts**: While planning a trip in the States, mostly OpenCPN and paper.
+  While underway, and for all things Canadian, mostly Navionics for now, though
+  I have finally purchased (and not yet installed) a Garmin EchoMap Plus 42cv
+  for the cockpit as of summer 2023. Soon...
 
 ## Okay, now for storytime...
 
 > <span class="tangential">
 > Cloudy Day is actually my second sailboat, though the first was only briefly
 > in my care: I learned to sail in spring/early summer 2021 on an
-> unnamed-so-far-as-I-understood-things Clark San Juan 28 (I forget the exact
-> model year - late '70s or early '80s). Realizing the boat wasn't quite the
-> one I wanted to invest tons of time or effort into (particularly, the
-> electric motor refit I wanted to do), I parted with that SJ28 and purchased
-> Cloudy Day.
+> unnamed-so-far-as-I-understood-things 1978 Clark San Juan 28. Realizing the
+> boat wasn't quite the one I wanted to invest tons of time or effort into
+> (particularly, the electric motor refit I wanted to do), I parted with that
+> SJ28 and purchased Cloudy Day.
 > </span>
 
 I purchased Cloudy Day in Bellingham, WA in August of 2021 for about $10,000
