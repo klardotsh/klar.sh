@@ -9,55 +9,26 @@ listing of, broadly, what I'm up to in life, and where my focuses are.
 > control](https://github.com/klardotsh/klar.sh/blob/master/www/src/now.md).
 > </span>
 
-Most recent update: `2023-05-11`
+Most recent update: `2023-06-15`
 
-- By golly, I'm in Canada! I sailed over to Victoria, BC from Friday Harbor, WA
-  (via Roche Harbor, WA - long story, I'll copy my writeup over from other
-  socials to this site soonish) this past weekend, and now it's go time for
-  prepping the boat for an off-grid summer at anchor up the BC coast. I'll be
-  doing most of this list at the dock in Victoria, but a few things will wait
-  for my brief haulout in Sidney, BC in early June. These projects include:
-    * Mounting solar panels to the deck (at time of writing, they're now
-      mounted, but not yet wired)
-    * Replacing running rigging: these ropes are ANCIENT and feel terrible in
-      the hand. Some of them are outright safety concerns.
-    * Rigging a boom preventer
-    * Sorting out anchoring gear and, as necessary, lines
-    * Installing digital cockpit displays for NMEA data (depth, speed, wind,
-      etc). These are Garmin GNX20's that draw extremely little power, I'm
-      excited!
-    * Installing new lights and (maybe?) a wind transducer up the mast
-    * Installing the new radio and AIS transponder (I'll do a whole writeup on
-      this eventually, because I want to elaborate for my fellow US boaters on
-      things you'll need to accomodate and plan for if cruising to Canada)
-    * Even more maybe: replace the terrible antenna on the mast and its
-      cabling?
-    * Galley and head faucet plumbing and flushing fresh water tanks of any
-      gunk growing in them
-    * Figuring out (or building) more food storage places, and loading up
-      foodstuffs for a nice long summer away from civilization!
-    * Discarding any remaining unused/unnecessary stuff. This will probably
-      include various toolboxes and so forth that are currently a nightmare to
-      store (they were fine when sedentary all winter, but I'm rapidly learning
-      are horrible to stow and unstow for getting underway: repairing something
-      at anchor would be brutal, and reclaiming space for food storage will
-      become paramount)
-    * Bottom paint, by far the most mundane and routine item on this list!
-    * Possibly: installing the self-tailing winches I bought ages ago and are
-      just sitting around. This may wait a bit: it could in theory be done at
-      anchor later.
+Well, I've completed my first of four months in Canada for this summer. Solar
+panels are mounted, wired, and tested (and mostly keeping the batteries
+net-neutral while at anchor: they don't recharge any uses of the motor yet,
+because I simply don't generate enough power), all of my running rigging has
+been replaced with slick new XTS3 lines, my old windlass has been removed, my
+anchoring setup has gotten a decent bit of testing over the course of several
+weeks (in winds up to about 30-something knots, so far), I survived a grueling
+haulout where I removed and glassed in several thru-hulls that were no longer
+needed (and relocated a seacock), and I've provisioned the boat to a decent
+degree for "some?" amount of off-grid time (TBD). I've lost my dinghy to the
+sea, and my mind as well along the way I think, but I'm here, and the summer
+should offer some relaxation and beautiful sights to make up for it as I head
+north into Desolation Sound over the coming weeks (via a pitstop in Nanaimo to
+pick up my wind turbine and a few other odds and ends).
 
-- In mid-April, I commentated the FIRST Robotics World Championship in Houston,
-  TX. It was such a blast to see folks I often only see once a year (robot
-  friends from all over the continent and world), and of course to meet up with
-  many of my PNW pals yet again. If you want to find my commentary in the
-  YouTube archives, I was the lead announcer for the FRC Daly Division field.
-
-- I'm feeling pretty settled in at the new job; my coworkers are awesomely
-  friendly people, the banter is good, and the work is very much up my alley at
-  the intersection of ops, internal tooling, and proactive SRE-style work! The
-  meetings load is light, too, which helps a ton for retaining sanity :)
-
-That's about all I can write up today. Suffice to say, `NOW` is a very busy
-time for me! I'll catch y'all later, and probably try to update this at the end
-of the haul out when prepping to sail north!
+I've had a bit of time to hack on [Gale](https://github.com/klardotsh/gale)
+here and there at anchor. It's a peaceful way to spend an evening. I'm not sure
+how much of that I'll be doing this summer, though: I intend to spend many of
+my summer evenings enjoying sunsets and laughs with friends, or maybe some
+swims and hikes and rowing. But hey, a nerd and his screens eventually find
+some time to meet back up...
