@@ -10,20 +10,21 @@ few (or even few dozen) commits but ultimately went nowhere: maybe I need a
 
 ## Active
 
-- [Gale](https://sr.ht/~klardotsh/gale/) (2021-present[^1]; Zig): An experiment in a
-  stack-based-to-the-logical-conclusion, type-safe-enough, ultra-high-level
-  Forth-Lisp-Rust-Lua spiritual hybrid of sorts. Very much a work in progress.
+- [Gale](https://sr.ht/~klardotsh/gale/) (2021-present[^1]; Zig): An experiment
+  in a stack-based-to-the-logical-conclusion, type-safe-enough,
+  ultra-high-level Forth-Lisp-Rust-Lua spiritual hybrid of sorts. Very much a
+  work in progress.
 
 [^1]: Under the name "gluumy" until early 2023, pronounced "gloomy".
 
 ## Not My Direct Focus, But Maintained
 
-- [begrudge](https://github.com/klardotsh/begrudge) (2021-present; Zig), a simple
-  converter of ANSI-escaped terminal output into class-annotated HTML for web
-  rendering.
+- [begrudge](https://git.sr.ht/~klardotsh/begrudge) (2021-present; Zig), a
+  simple converter of ANSI-escaped terminal output into class-annotated HTML
+  for web rendering.
 
 - [The Fork Off Public
-  License](https://github.com/klardotsh/fork-off-public-license)
+  License](https://git.sr.ht/~klardotsh/fork-off-public-license)
   (2022-present), a tongue-in-cheek software license that has never, to my
   knowledge, been used on an actual project, but has made many dozens of people
   laugh, and that's all it had to do.
