@@ -49,7 +49,7 @@ few (or even few dozen) commits but ultimately went nowhere: maybe I need a
 
 ## Completed/Abandoned
 
-- [`qmk_emote_macro_generator`](https://github.com/klardotsh/qmk_emote_macro_generator
+- [`qmk_emote_macro_generator`](https://github.com/klardotsh/qmk_emote_macro_generator)
   (2018; Rust), a preprocessor of sorts to generate QMK mechanical keyboard
   firmware code to make the keyboard type out Unicode emojis. While the source
   code still builds (thanks, Rust 1.x guarantees!), I'm not sure if the code it
