@@ -6,7 +6,7 @@ listing of, broadly, what I'm up to in life, and where my focuses are.
 
 > <span class="tangential">
 > If you _really_ want to see the history of this page, it's all [in version
-> control](https://github.com/klardotsh/klar.sh/blob/master/www/src/now.md).
+> control](https://git.sr.ht/~klardotsh/klar.sh/log/master/item/www/src/now.md).
 > </span>
 
 Most recent update: `2023-06-15`
