@@ -11,6 +11,7 @@ klar.sh {
 	}
 
 	redir /now /now.html permanent
+	redir /uses /uses.html permanent
 
 	root * /srv/www
 	file_server
