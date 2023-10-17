@@ -30,9 +30,10 @@ coffee, and how much of it is necessary to survive a PNW winter.
 
 My contact information is [linked from the navbar and here](/contact.html).
 
-I am currently "mostly" not accepting contract work, but if you think it's
-*really* something I should take a look at, email me and we'll figure something
-out. Timelines won't be super quick, I can promise that much.
+I am currently accepting contract work in the realms of "DevOps" and
+infrastructure, backend web development, developer experience and tooling,
+and general systems engineering. See [my resume](/resume.html) or [my contact
+information](/contact.html) if you're interested!
 
 ## After you're done here...
 

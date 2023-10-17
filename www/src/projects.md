@@ -2,11 +2,11 @@
 
 This is a non-exhaustive list of projects I've worked on over the years, in a
 format loosely inspired by [@jcs](https://jcs.org/projects). As a general rule,
-this list currently doesn't include projects I've written on behalf of
-employers, even if those projects were open source. It also doesn't include a
-myriad of partially-baked ideas that might have gotten a Git repository and a
-few (or even few dozen) commits but ultimately went nowhere: maybe I need a
-`graveyard.html` for those...
+this list doesn't include projects I've written on behalf of employers, even if
+those projects were open source (for that stuff, see [my resume](/resume.html)).
+It also doesn't include a myriad of partially-baked ideas that might have gotten
+a Git repository and a few (or even few dozen) commits but ultimately went
+nowhere: maybe I need a `graveyard.html` for those...
 
 ## Active
 

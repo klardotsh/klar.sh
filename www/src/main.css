@@ -1,7 +1,20 @@
+@media print {    
+  .noprint, .noprint * {
+      display: none !important;
+  }
+}
+
+@media not print {
+	.onlyprint, .onlyprint * {
+		display: none !important;
+	}
+}
+
 html {
 	background-color: #eee;
 	color: #444;
 	font-family: serif;
+	font-variant-emoji: emoji;
 }
 
 a, a:link {
@@ -26,6 +39,30 @@ a, a:link {
 	}
 }
 
+.is-blocky {
+	display: block;
+}
+
+.is-inline-blocky {
+	display: inline-block;
+}
+
+@media print {
+	/* HACK to make printed version of my resume look better. no idea what this
+	 * will do to eg. blog posts, and hopefully I never have to solve for that.
+	 */
+	.is-inline-blocky {
+		display: block;
+	}
+
+	.more-formal-when-printed {
+		text-transform: none;
+	}
+
+	.avoid-print-break {
+		break-inside: avoid;
+	}
+}
 
 body {
 	font-size: 13pt;
@@ -119,6 +156,7 @@ p::after {
 h1, h2, h3, h4, h5, h6 {
 	font-variant: small-caps;
 	font-family: sans-serif;
+	text-align: center;
 }
 
 a {
@@ -142,6 +180,7 @@ header .whoami h1 {
 	padding: 0.5em;
 	text-align: center;
 	font-size: 85%;
+	break-inside: avoid;
 }
 
 @media only screen and (max-width: 700px) {
@@ -157,4 +196,98 @@ header .whoami h1 {
 #content p img {
 	max-width: 100%;
 	width: 100%;
+}
+
+.grayscale {
+	filter: grayscale(100%);
+}
+
+.comma-separated-list li {
+	display: inline;
+}
+
+.comma-separated-list li:after {
+	content: ",";
+}
+
+.comma-separated-list li:last-child:after {
+	content: "";
+}
+
+.resume .job {
+	break-inside: avoid;
+}
+
+.flexy {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.flexy .flex {
+	flex: 1;
+}
+
+.flexy .break {
+	flex-basis: 100%;
+	height: 0;
+}
+
+.flexy .push-left-20 {
+	flex-basis: 20%;
+	flex-grow: 0;
+}
+
+.flexy .push-left-30 {
+	flex-basis: 30%;
+	flex-grow: 0;
+}
+
+.flexy h3, .flexy h4 {
+	display: inline-block;
+	align-self: center;
+	text-align: left;
+}
+
+.resume .skillset h3,
+.resume .job .title,
+.resume .testimonial h4,
+.resume .foss-where {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.resume .job .tenure,
+.resume .testimonial .author p {
+	font-size: 85%;
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+.resume .job .tenure span {
+	display: inline-block;
+}
+
+.flex.description {
+	align-self: center;
+	margin-left: 1em;
+	margin-right: 0;
+	text-align: justify;
+}
+
+details.heading summary {
+	text-align: center;
+}
+
+details.heading summary h3 {
+	display: inline-block;
+}
+
+.resume .accolades p {
+	text-align: justify;
+}
+
+.resume .testimonial .flex.description {
+	margin-top: 0;
 }

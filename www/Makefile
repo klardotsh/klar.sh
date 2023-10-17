@@ -12,6 +12,7 @@ all: $(OUTPUT_DIR)
 $(OUTPUT_DIR):
 	mkdir -p $(OUTPUT_DIR)
 	./ssg6 $(INPUT_DIR) $(OUTPUT_DIR) $(SITE_TITLE) $(BASE_URL)
+	cat src/_resume-header.html src/resume.html src/_footer.html > $(OUTPUT_DIR)/resume.html
 	cp -v $(INPUT_DIR)/*.png $(OUTPUT_DIR)/
 
 # A hackish helper script to dither images and then shrink every last bit out
