@@ -198,6 +198,10 @@ header .whoami h1 {
 	width: 100%;
 }
 
+.force-caps {
+	text-transform: uppercase;
+}
+
 .grayscale {
 	filter: grayscale(100%);
 }
