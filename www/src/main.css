@@ -218,7 +218,8 @@ header .whoami h1 {
 	content: "";
 }
 
-.resume .job {
+.resume .job,
+.projects-project {
 	break-inside: avoid;
 }
 
@@ -257,19 +258,22 @@ header .whoami h1 {
 .resume .skillset h3,
 .resume .job .title,
 .resume .testimonial h4,
-.resume .foss-where {
+.resume .foss-where,
+.projects-project .title {
 	margin-bottom: 0;
-	text-align: center;
+	text-align: left;
 }
 
 .resume .job .tenure,
+.projects-project .tenure,
 .resume .testimonial .author p {
 	font-size: 85%;
 	padding: 0.5em 0;
-	text-align: center;
+	text-align: left;
 }
 
-.resume .job .tenure span {
+.resume .job .tenure span,
+.projects-project .tenure span {
 	display: inline-block;
 }
 
