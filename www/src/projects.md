@@ -27,6 +27,39 @@ in progress.
 </div>
 </div>
 
+<div class="projects-project flexy">
+<div class="flex push-left-30">
+<h4 class="title"><a href="//git.sr.ht/~klardotsh/kaboom">kaboom</a></h4>
+<p class="tenure">
+<span class="dates">2023 - present; Rust</span>
+</p>
+</div>
+
+<div class="description flex">
+<p>
+A CLI to provide the absolute basics of authoring an Atom feed as an XML file on
+disk, targeted towards DIY bloggers using static site generators (or just plain
+old HTML files) that don't already generate Atom feeds.
+</p>
+</div>
+</div>
+
+<div class="projects-project flexy">
+<div class="flex push-left-30">
+<h4 class="title"><a href="//git.sr.ht/~klardotsh/what-the-ref">What The Ref?</a> <a href="//whattheref.info">(visit)</a></h4>
+<p class="tenure">
+<span class="dates">2023 - present; Rust</span>
+</p>
+</div>
+
+<div class="description flex">
+<p>
+A quick-reference tool for FIRST Tech Challenge referees who otherwise have to
+string together numerous sources of rules and interpretations.
+</p>
+</div>
+</div>
+
 ### Not My Direct Focus, But Maintained
 
 <div class="projects-project flexy">
