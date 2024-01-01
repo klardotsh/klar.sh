@@ -1,5 +1,12 @@
 # Articles
 
+## 2024
+
+- [003: Another Year, Huh?](/articles/2024-003-another-year-huh.html)
+
+  _Or: My anti-resolution resolutions for another lap around the flaming
+  gasball centering our solar system._
+
 ## 2023
 
 - [002: On Abuse of Emergency Alerts](/articles/2023-002-on-abuse-of-emergency-alerts.html)
