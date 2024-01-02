@@ -153,6 +153,11 @@ p::after {
 	line-height: 1.5em;
 }
 
+#content p,
+#content blockquote {
+	text-align: justify;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-variant: small-caps;
 	font-family: sans-serif;
