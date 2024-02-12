@@ -22,3 +22,15 @@ matrix.klar.sh {
 	reverse_proxy /_matrix/* http://10.42.69.2:8448
 	reverse_proxy /_synapse/client/* http://10.42.69.2:8448
 }
+
+warden.klar.sh {
+	encode zstd gzip
+	reverse_proxy /* http://10.42.69.20:8000
+}
+
+whattheref.info {
+	encode zstd gzip
+	root * /srv/www
+	try_files /wtr_2023_wip.html
+	file_server
+}

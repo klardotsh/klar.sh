@@ -8,11 +8,6 @@ terraform {
       version = "2.11"
     }
 
-    vultr = {
-      source  = "vultr/vultr"
-      version = "1.5"
-    }
-
     linode = {
       source  = "linode/linode"
       version = "1.21"
@@ -26,15 +21,6 @@ terraform {
 }
 
 provider "digitalocean" {}
-
-provider "vultr" {}
-
-data "vultr_region" "amsterdam" {
-  filter {
-    name   = "name"
-    values = ["Amsterdam"]
-  }
-}
 
 variable "public_ip" {
   type = string

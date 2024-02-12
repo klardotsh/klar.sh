@@ -43,9 +43,9 @@ resource "zerotier_member" "synapse" {
   ip_assignments          = ["10.42.69.2"]
 }
 
-resource "zerotier_member" "starfinder1" {
-  name                    = "starfinder1"
-  member_id               = "ae4652cd0c" # generated after init sequence documented in linode.tf
+resource "zerotier_member" "warden1" {
+  name                    = "warden1"
+  member_id               = "29b5239cbb" # generated after init sequence documented in linode.tf
   network_id              = zerotier_network.klardotsh.id
   allow_ethernet_bridging = true
   no_auto_assign_ips      = true

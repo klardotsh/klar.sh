@@ -46,25 +46,6 @@ provider "registry.terraform.io/linode/linode" {
   ]
 }
 
-provider "registry.terraform.io/vultr/vultr" {
-  version     = "1.5.0"
-  constraints = "1.5.0"
-  hashes = [
-    "h1:Kg/x1xj5rQvXsIxD/szcxxG1neEw5KiKFJLnszNjKlY=",
-    "zh:099a6c2243ff78f508df9e4926c103018ff95e221bdd8dafc035879cbc08b494",
-    "zh:3b0a06f4c29c649150ed1751ac83094efa72ce8ab161d9f8cc1de563ea249727",
-    "zh:4c4449b8fa6455eaac51d71b2fb710b6776b6bfc1f54dcd05f9eb816016f9ceb",
-    "zh:626f37483bdc138dda77b620f92092bd98186560474a2a637673ab43e85459df",
-    "zh:6568cd56cb4f916c92158aef4b5637d88b8d3e5844bcab7d6cef8691d5f310d7",
-    "zh:6b0ee7db8a78a1020fa7680935de07e8909c1f95593580c6d5519e996f88d8fd",
-    "zh:743987367b753737a9d3c84e8153a0bac917ab47b82f24757392f5f6bc65418e",
-    "zh:7ea8ac227266904329b66cf46109026ea14967e72a7e64a4fa82c7e17b8047e0",
-    "zh:8f6739fac95e176ae861b34c74d17630bd0e466e51267aecf848145a892c0935",
-    "zh:a3bd9f7a1239036f8ba650d7f61698e8636cd0f85142804b68c8213fe9c68a7a",
-    "zh:db5531a0894cb63b03b24491b730bba30ac6b9345e3a73cb264f9d5f0c2f258b",
-  ]
-}
-
 provider "registry.terraform.io/zerotier/zerotier" {
   version     = "1.1.0"
   constraints = "1.1.0"

@@ -23,20 +23,12 @@ resource "digitalocean_record" "synapse" {
   value  = linode_instance.synapse.ip_address
 }
 
-resource "digitalocean_record" "factorio1" {
+resource "digitalocean_record" "warden1" {
   domain = digitalocean_domain.klarsh.name
-  name   = "factorio1.srv"
+  name   = "warden1.srv"
   type   = "A"
   ttl    = 3600
-  value  = linode_instance.starfinder1.ip_address
-}
-
-resource "digitalocean_record" "starfinder1" {
-  domain = digitalocean_domain.klarsh.name
-  name   = "starfinder1.srv"
-  type   = "A"
-  ttl    = 3600
-  value  = linode_instance.starfinder1.ip_address
+  value  = linode_instance.warden.ip_address
 }
 
 // create a wherever.srv.klar.sh record for all external servers
@@ -58,9 +50,9 @@ resource "digitalocean_record" "root" {
   value  = linode_instance.bouncer.ip_address
 }
 
-resource "digitalocean_record" "starfinder1_http" {
+resource "digitalocean_record" "warden" {
   domain = digitalocean_domain.klarsh.name
-  name   = "starfinder-first"
+  name   = "warden"
   type   = "CNAME"
   ttl    = 3600
   value = "@"
