@@ -19,6 +19,8 @@ Most recent update: `2024-02-13`
 
 ## Primary Desktop Setup
 
+![A picture of this workstation in my home office](/workstation-2024-02-13.png)
+
 > <span class="tangential">
 > For those curious, the hostname is `snowcone`, after [the deadmau5
 > song](https://songwhip.com/deadmau5/snowcone).
@@ -128,6 +130,9 @@ Most recent update: `2024-02-13`
   SSDs (2x 2TB, 1x 4TB), all running ZFS.
 
 ## Laptops
+
+![It's a Thinkpad... what did you think it was going to look
+like?](/laptop-2024-02-13.png)
 
 My primary laptop is a [Lenovo Thinkpad X13S Gen4
 AMD](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx/thinkpad-x13-gen-4-13-inch-amd/len101t0081)

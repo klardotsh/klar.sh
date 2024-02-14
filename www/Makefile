@@ -21,7 +21,9 @@ $(OUTPUT_DIR):
 #
 # File names should be provided as env vars or as make args:
 #
-# make worsen-image WORSEN_INPUT=~/Downloads/input.png src/output.png
+# make worsen-image \
+#     WORSEN_INPUT=~/Downloads/input.png \
+#     WORSEN_OUTPUT=./src/output.png
 #
 # I should eventually make @2x and @3x images as well for HiDPI screens, I
 # guess. TODO.
