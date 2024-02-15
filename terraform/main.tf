@@ -3,6 +3,11 @@ terraform {
   // don't want tfstate on a single point of failure
 
   required_providers {
+    gandi = {
+      version = "2.3"
+      source  = "go-gandi/gandi"
+    }
+
     digitalocean = {
       source  = "digitalocean/digitalocean"
       version = "2.11"
