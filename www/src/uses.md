@@ -149,16 +149,6 @@ care less about the trackpoint).
 > song](https://songwhip.com/silicone-soul/les-nocturnes).
 > </span>
 
-I also own an MNT Reform (the original thiqq version). If I'm being honest,
-this is more of a project car I get to take around the block a couple times
-every few months before something else about it breaks (or I just run out of
-RAM - 4GB on the stock model - to handle my workflows), whereas the Thinkpad is
-more of the trusty Honda Civic I can drive to work daily. This Reform has been
-plagued with countless problems and has honestly spent most of its life in
-storage bins or closets, which makes me deeply sad, because I really, really
-want a sturdy, repairable laptop with a mechanical keyboard and commodity
-battery cells to be reality. It's just not currently *my* reality.
-
 Elsewhere in my arsenal of portable machines, I still own two barely-usable machines:
 
 - A [Samsung Chromebook
