@@ -1,0 +1,7 @@
+source .env
+
+# ImageWorsener doesn't appear to be particularly popularly packaged, so you'll
+# have to build this yourself somewhere and put it in $PATH for now. I intend
+# to move to some other image optimization system eventually, but for now, this
+# is a system-specific.
+PATH_add ~/src/imageworsener
