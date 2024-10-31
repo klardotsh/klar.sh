@@ -2,6 +2,11 @@
 
 ## 2024
 
+- [004: Converting a Void Linux install from Musl to glibC in place](/articles/2024-004-converting-void-musl-glibc)
+
+  _Or: Despite their complexities, ZFS+ZFSBootMenu enable some cool things
+  sometimes._
+
 - [003: Another Year, Huh?](/articles/2024-003-another-year-huh.html)
 
   _Or: My anti-resolution resolutions for another lap around the flaming
