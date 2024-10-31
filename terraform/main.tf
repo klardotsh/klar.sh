@@ -20,7 +20,7 @@ terraform {
 
     zerotier = {
       source  = "zerotier/zerotier"
-      version = "1.1"
+      version = "1.6"
     }
   }
 }

@@ -7,6 +7,10 @@ tf-init:
 	@echo "---> Attempting to init Terraform. If this fails, ensure env includes DigitalOcean creds"
 	cd terraform && terraform init
 
+tf-deps-upgrade:
+	@echo "---> Attempting to upgrade Terraform deps. If this fails, ensure env includes DigitalOcean creds"
+	cd terraform && terraform init -upgrade
+
 tf-plan: tf-init
 	cd terraform && terraform plan -var="public_ip=$(PUBLIC_IP)"
 
