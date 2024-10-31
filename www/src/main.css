@@ -37,6 +37,10 @@ a, a:link {
 	a, a:link {
 		color: #eee;
 	}
+
+	.invert-when-dark {
+		filter: invert(100%);
+	}
 }
 
 .is-blocky {
@@ -104,13 +108,20 @@ header ul li img {
 	max-height: 5em;
 }
 
+footer {
+	padding-top: 0.5em;
+	border-top: 0.15em dotted lightgrey;
+	text-align: center;
+	margin: auto;
+}
+
 nav {
 	overflow: auto;
 	text-align: center;
 	margin: auto;
 }
 
-nav::after {
+nav::after, footer::after {
 	clear: both;
 }
 
