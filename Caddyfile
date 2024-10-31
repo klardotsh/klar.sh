@@ -10,10 +10,9 @@ klar.sh {
 		close
 	}
 
-	redir /now /now.html permanent
-	redir /uses /uses.html permanent
-
 	root * /srv/www
+	uri * strip_suffix /
+	try_files {path} {path}/ {path}.html
 	file_server
 }
 
@@ -33,4 +32,9 @@ whattheref.info {
 	root * /srv/www
 	try_files /wtr_2023_wip.html
 	file_server
+}
+
+writing.is.absolutelynot.fun {
+	encode zstd gzip
+	reverse_proxy /* http://10.42.69.21:9001
 }
