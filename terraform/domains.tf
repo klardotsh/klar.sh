@@ -107,6 +107,38 @@ import {
   id = "absolutelynot.fun"
 }
 
+resource "gandi_livedns_domain" "absolutelynot_fun" {
+  name = "absolutelynot.fun"
+}
+
+import {
+  to = gandi_livedns_domain.absolutelynot_fun
+  id = "absolutelynot.fun"
+}
+
+resource "gandi_livedns_record" "writing_is_anf" {
+  name   = "writing.is"
+  zone   = gandi_livedns_domain.absolutelynot_fun.name
+  ttl    = 360
+  type   = "CNAME"
+  values = ["${digitalocean_record.bouncer.fqdn}."]
+}
+
+resource "gandi_livedns_record" "bookmarks_are_anf" {
+  name   = "bookmarks.are"
+  zone   = gandi_livedns_domain.absolutelynot_fun.name
+  ttl    = 360
+  type   = "CNAME"
+  values = ["${digitalocean_record.bouncer.fqdn}."]
+}
+
+resource "gandi_livedns_record" "factorio_is_anf" {
+  name   = "factorio.is"
+  zone   = gandi_livedns_domain.absolutelynot_fun.name
+  ttl    = 360
+  type   = "A"
+  values = [linode_instance.anf_factorio.ip_address]
+}
 
 resource "gandi_domain" "whattheref_info" {
   name = "whattheref.info"

@@ -288,3 +288,179 @@ resource "linode_firewall" "warden_firewall" {
   linodes = [linode_instance.warden.id]
 }
 
+resource "linode_instance" "anf_containers" {
+  label            = "anf_containers"
+  region           = "us-west"
+  type             = "g6-nanode-1"
+  authorized_users = [data.linode_profile.me.username]
+  image            = "linode/alpine3.19"
+  backups_enabled  = true
+}
+
+/*
+How this box was set up:
+
+ssh root@containing.absolutelynot.fun
+echo containing > /etc/hostname
+hostname -F /etc/hostname
+
+# needed because apk add will hang otherwise. can we finally stop trying to
+# make ipv6 happen? the answer is almost always "disable it if you want
+# anything to work"
+#
+# quasi-related: https://github.com/gliderlabs/docker-alpine/issues/307
+sysctl net.ipv6.conf.all.disable_ipv6=1
+echo 'net.ipv6.conf.all.disable_ipv6 = 1' >> /etc/sysctl.conf
+
+# Re-add zerotier support (TODO: remove...)
+echo 'http://dl-cdn.alpinelinux.org/alpine/v3.17/community' >> /etc/apk/repositories
+
+apk add --update foot-extra-terminfo zerotier-one docker docker-compose
+apk upgrade
+rc-update add zerotier-one default
+rc-update add docker default
+rc-service zerotier-one start
+zerotier-cli info # copy out the ID here for zerotier.tf
+zerotier-cli join <network id from zerotier.tf output>
+reboot # because alpine by default doesn't have /dev hotplugging (I guess? busybox, eh?)
+
+# add docker services as necessary...
+ */
+
+resource "linode_firewall" "anf_containers_firewall" {
+  label           = "anf_containers"
+  inbound_policy  = "DROP"
+  outbound_policy = "ACCEPT"
+
+  inbound {
+    label    = "allow-ssh-tcp"
+    action   = "ACCEPT"
+    protocol = "TCP"
+    ports    = "22"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-ssh-udp"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "22"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-zt-udp"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "9993"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+
+  linodes = [linode_instance.anf_containers.id]
+}
+
+resource "linode_instance" "anf_factorio" {
+  label            = "anf_factorio"
+  region           = "us-west"
+  type             = "g6-standard-2"
+  authorized_users = [data.linode_profile.me.username]
+  image            = "linode/alpine3.20"
+  backups_enabled  = true
+}
+
+/*
+How this box was set up:
+
+ssh root@factorio.is.absolutelynot.fun
+echo factorio-anf > /etc/hostname
+hostname -F /etc/hostname
+
+# needed because apk add will hang otherwise. can we finally stop trying to
+# make ipv6 happen? the answer is almost always "disable it if you want
+# anything to work"
+#
+# quasi-related: https://github.com/gliderlabs/docker-alpine/issues/307
+sysctl net.ipv6.conf.all.disable_ipv6=1
+echo 'net.ipv6.conf.all.disable_ipv6 = 1' >> /etc/sysctl.conf
+
+# Re-add zerotier support (TODO: remove...)
+echo 'http://dl-cdn.alpinelinux.org/alpine/v3.17/community' >> /etc/apk/repositories
+
+apk add --update foot-extra-terminfo zerotier-one docker docker-compose
+apk upgrade
+rc-update add zerotier-one default
+rc-update add docker default
+rc-service zerotier-one start
+zerotier-cli info # copy out the ID here for zerotier.tf
+zerotier-cli join <network id from zerotier.tf output>
+reboot # because alpine by default doesn't have /dev hotplugging (I guess? busybox, eh?)
+
+# then, per https://github.com/factoriotools/factorio-docker readme (change
+# SAVE_NAME as appropriate)
+docker run -d \
+	-p 34197:34197/udp \
+	-p 27015:27015/tcp \
+	-v /srv/factorio:/factorio \
+	-e LOAD_LATEST_SAVE=false \
+	-e SAVE_NAME="klardotsh learns space age" \
+	--name factorio \
+	--restart=unless-stopped \
+	factoriotools/factorio:stable
+ */
+resource "linode_firewall" "anf_factorio_firewall" {
+  label           = "anf_factorio"
+  inbound_policy  = "DROP"
+  outbound_policy = "ACCEPT"
+
+  inbound {
+    label    = "allow-ssh-tcp"
+    action   = "ACCEPT"
+    protocol = "TCP"
+    ports    = "22"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-ssh-udp"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "22"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-zt-udp"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "9993"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-factorio-udp"
+    action   = "ACCEPT"
+    protocol = "UDP"
+    ports    = "34197"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  inbound {
+    label    = "allow-factorio-tcp"
+    action   = "ACCEPT"
+    protocol = "TCP"
+    ports    = "27015"
+    ipv4     = ["0.0.0.0/0"]
+    ipv6     = ["::/0"]
+  }
+
+  linodes = [linode_instance.anf_factorio.id]
+}
+

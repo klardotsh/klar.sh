@@ -31,6 +31,14 @@ resource "digitalocean_record" "warden1" {
   value  = linode_instance.warden.ip_address
 }
 
+resource "digitalocean_record" "anf_containers" {
+  domain = digitalocean_domain.klarsh.name
+  name   = "anf-containers.srv"
+  type   = "A"
+  ttl    = 3600
+  value  = linode_instance.anf_containers.ip_address
+}
+
 // create a wherever.srv.klar.sh record for all external servers
 resource "digitalocean_record" "srv_external" {
   for_each = local.external_server_ips
@@ -55,7 +63,7 @@ resource "digitalocean_record" "warden" {
   name   = "warden"
   type   = "CNAME"
   ttl    = 3600
-  value = "@"
+  value  = "@"
 }
 
 resource "digitalocean_record" "git" {
@@ -63,7 +71,7 @@ resource "digitalocean_record" "git" {
   name   = "git"
   type   = "CNAME"
   ttl    = 3600
-  value = "@"
+  value  = "@"
 }
 
 resource "digitalocean_record" "ci" {
@@ -71,7 +79,7 @@ resource "digitalocean_record" "ci" {
   name   = "ci"
   type   = "CNAME"
   ttl    = 3600
-  value = "@"
+  value  = "@"
 }
 
 resource "digitalocean_record" "moveinscript" {
@@ -79,7 +87,7 @@ resource "digitalocean_record" "moveinscript" {
   name   = "moveinscript"
   type   = "CNAME"
   ttl    = 3600
-  value = "@"
+  value  = "@"
 }
 
 resource "digitalocean_record" "matrix" {
@@ -87,7 +95,7 @@ resource "digitalocean_record" "matrix" {
   name   = "matrix"
   type   = "CNAME"
   ttl    = 3600
-  value = "@"
+  value  = "@"
 }
 
 resource "digitalocean_record" "keybase_verification" {
