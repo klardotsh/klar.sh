@@ -1,4 +1,4 @@
-@media print {    
+@media print {
   .noprint, .noprint * {
       display: none !important;
   }
@@ -75,9 +75,9 @@ body {
 	padding-top: 0;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
 	body {
-		max-width: 650px;
+		max-width: 750px;
 		margin: 40px auto;
 	}
 }
@@ -162,11 +162,6 @@ p::after {
 
 #content {
 	line-height: 1.5em;
-}
-
-#content p,
-#content blockquote {
-	text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -297,7 +292,6 @@ header .whoami h1 {
 	align-self: center;
 	margin-left: 1em;
 	margin-right: 0;
-	text-align: justify;
 }
 
 details.heading summary {
@@ -306,10 +300,6 @@ details.heading summary {
 
 details.heading summary h3 {
 	display: inline-block;
-}
-
-.resume .accolades p {
-	text-align: justify;
 }
 
 .resume .testimonial .flex.description {

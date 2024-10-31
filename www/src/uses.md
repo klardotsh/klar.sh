@@ -15,11 +15,11 @@ woodworking tools, etc., though I might add pages to this effect later.
 > that history may be useful or entertaining or both.
 > </span>
 
-Most recent update: `2024-02-13`
+Most recent update: `2024-05-28`
 
 ## Primary Desktop Setup
 
-![A picture of this workstation in my home office](/workstation-2024-02-13.png)
+![A picture of this workstation in my home office](/workstation-2024-05-19.png)
 
 > <span class="tangential">
 > For those curious, the hostname is `snowcone`, after [the deadmau5
@@ -27,64 +27,39 @@ Most recent update: `2024-02-13`
 > </span>
 
 - A custom desktop build optimized mostly for largely-parallelized development
-  work and running RAM-intensive development tools, but also for light (eg.
-  Factorio, Oxygen Not Included, Dorfromantik, etc.) gaming (even at the crazy
-  resolution I push - see displays bullet point below).
+  work and running RAM-intensive development tools, but also for occasional
+  gaming (Factorio, Oxygen Not Included, Civilization, Overwatch 2, etc.)
 
     * AMD 7900 gently overclocked to about 5.6GHz
     * 96GB RAM (2x Crucial 48GB DDR5 5600MT/s sticks)
     * 2TB Samsung 990 Pro SSD
-    * AMD 7600 GPU (8GB)
+    * AMD 7900-GRE GPU (16GB)
     * Cooling is handled by a huge array of BeQuiet products, including a Dark
       Rock Pro 5 CPU cooler (it's nearly silent, indeed)
     * Cased in a Thermaltake Tower 200
 
-  This machine runs Void Linux x86\_64-glibc (for now) on a ZFS root.
+  This machine runs Void Linux x86\_64-glibc on a ZFS rootfs.
 
   <details>
   <summary>My dream device in this category...</summary>
   I'm not even sure any more - I guess give me an ARM64 or RISC-V rig with
-  32-128GB of RAM and a GPU capable of playing things no more intensive than
-  Minecraft, and make it draw less than 30W at full tilt. Now make it run Linux
-  and/or FreeBSD and/or OpenBSD well, and let it be powered off DC easily to
-  avoid AC inversion costs in DC-native environments (although I currently no
-  longer live in one, I intend to some day again in the future). At this point,
-  the only currently-available devices that would fit the bill are probably the
+  64-128GB of RAM and a capable GPU for 4k@120 light-medium gaming, and make it
+  draw less than 30W at full tilt. Now make it run Linux and/or FreeBSD and/or
+  OpenBSD well, and let it be powered off DC easily to avoid AC inversion costs
+  in DC-native environments (although I currently no longer live in one, I
+  intend to some day again in the future). At this point, the only
+  currently-available devices that would fit the bill are probably the
   Qualcomm-based Windows Dev Kit 2023 ("Volterra"), which until very recently
   had nightmarish problems booting Linux, and a Mac Mini with a modded power
   supply (which still requires tons of work from the Asahi crew to be usable,
   so it's a bold bet). Or maybe something in the RK3588 family.
   </details>
 
-- [2x LG DualUp](https://www.lg.com/us/monitors/lg-28mq750-c-dualup-monitor)
-  Monitors with the LG Ergo Stands. Turned landscape and angled into somewhat
-  of a "curved field of view", this setup functionally resembles the ultrawides
-  I once used, but with a significantly better vertical aspect. The bezels in
-  the middle of my field of view are annoying, but the upshot is that I now
-  have two physical monitors, which can be window managed independently.
-  Keeping chats and other distractions (or documentation, or whatever) on one
-  monitor, and the primary task at hand (editors, games, whatever) on the other
-  is an excellent workflow, and something I didn't really get to do during my
-  6+ year stint with ultrawide monitors previously.
-
-  These DualUps have more than exceeded expectations so far (so much so that
-  after 6 months on a single one, I bought a second), and the near-square
-  aspect ratio is <em>significantly</em> better than any widescreen aspect
-  ratio for my uses.
-
-  <details>
-  <summary>My dream device in this category...</summary>
-  I've been saying for years my ideal setup would probably be two e-ink
-  displays of reasonable size, and an OLED display for watching video or
-  otherwise colorized or high framerate content. I'm still interested in trying
-  this, but every time I poke at Dasung and Boox's offerings in the standalone
-  e-ink monitor space, they're just so horribly expensive that I can't justify
-  the things, especially with enough physical screen space to be useful to me
-  for dev work (2x 13" or one 21" or bigger panel). 
-
-  Honestly though, for as long as I'm on the IPS/LCD screen train, I think I
-  already have my dream setup. Thanks, LG, for thinking way outside the box!
-  </details>
+- [Dell
+  U4025QW](https://www.dell.com/en-us/shop/dell-ultrasharp-40-curved-thunderbolt-hub-monitor-u4025qw/apd/210-bmdp/monitors-monitor-accessories).
+  This is a relatively recent arrival which replaced two LG DualUp displays and
+  returned me to my long-time 21:9 roots, with double the framerate. So far, I
+  have nothing negative to say about this beast other than the price.
 
 - For keyboard input, I primarily use a [Unicorne
   LP](https://www.boardsource.xyz/products/unicorne-LP) running a Dvorak-based
