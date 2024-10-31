@@ -10,12 +10,6 @@
   fit within two or three IRC messages, it almost certainly needs to be an
   email instead.
 
-- By marine VHF radio: I sail S/V [Cloudy Day](/cloudy-day.html) around the
-  Salish Sea of Washington State and British Columbia; if you spot such a
-  vessel in your AIS targets with a US-issued MMSI starting with `3682`, please
-  feel free to call. If I'm not busy and I'm feeling social, I'll probably pick
-  up :)
-
 - If you want to hit me up on <a rel="me"
   href="//merveilles.town/@klardotsh">Mastodon</a>, go for it. Similar
   guidelines about message length apply as with IRC, but I tend to be decent

@@ -4,8 +4,8 @@ This is a living document in the spirit of [uses.tech](https://uses.tech) and
 [Uses This](https://usesthis.com) where you'll find a rough rundown of the
 hardware and software that makes up my daily working stack, and (where
 relevant), what my dream setup would be (in my current state of mind, at
-least!). If you're looking for what hardware my boat uses, instead, [see her
-dedicated page](/cloudy-day.html).
+least!). This doesn't yet include any notes about any boat hardware,
+woodworking tools, etc., though I might add pages to this effect later.
 
 > <span class="tangential">
 > I'm *constantly* changing my setup and tinkering with things on a monthly or
