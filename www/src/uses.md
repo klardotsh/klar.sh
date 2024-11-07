@@ -11,7 +11,7 @@ woodworking tools, etc., though I might add pages to this effect later.
 > I'm *constantly* changing my setup and tinkering with things on a monthly or
 > at least quarterly basis in some form or another. The history of this page is
 > all [in version
-> control](https://git.sr.ht/~klardotsh/klar.sh/log/master/item/www/src/now.md),
+> control](https://git.sr.ht/~klardotsh/klar.sh/log/master/item/www/src/uses.md),
 > that history may be useful or entertaining or both.
 > </span>
 
