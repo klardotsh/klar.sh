@@ -20,13 +20,6 @@ with [FIRST Robotics](//firstinspires.org) in the Pacific Northwest and beyond.
     Fediverse is like the mycelium of mushrooms." -
     [Source](queer.party/@DelphineUnseen/109371670513551027)
 
-I'm still building out this digital garden (it's winter, not much grows here
-yet, but I'm working on it). In the meantime, over on <a rel="me"
-href="https://merveilles.town/@klardotsh">my Mastodon</a>, you'll find short
-utterances into the void in the meantime about boats, living on them, tech,
-shouting at it, programming languages, designing them, and every so often
-coffee, and how much of it is necessary to survive a PNW winter.
-
 My contact information is [linked from the navbar and here](/contact.html).
 
 I'm open to small contract work in the realms of "DevOps" and infrastructure,
