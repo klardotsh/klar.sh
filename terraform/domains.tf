@@ -54,33 +54,6 @@ locals {
 # contact as of time of writing, so we must `ignore_changes` the entire owner
 # block for now.
 
-resource "gandi_domain" "kmkfw_io" {
-  name        = "kmkfw.io"
-  nameservers = local.ns_digitalocean
-
-  owner {
-    city        = var.whois_city
-    country     = var.whois_country
-    email       = var.whois_email
-    family_name = var.whois_family_name
-    given_name  = var.whois_given_name
-    phone       = var.whois_phone
-    state       = var.whois_state
-    street_addr = var.whois_street_addr
-    type        = var.whois_type
-    zip         = var.whois_zip
-  }
-
-  lifecycle {
-    ignore_changes = [owner]
-  }
-}
-
-import {
-  to = gandi_domain.kmkfw_io
-  id = "kmkfw.io"
-}
-
 resource "gandi_domain" "absolutelynot_fun" {
   name = "absolutelynot.fun"
 
