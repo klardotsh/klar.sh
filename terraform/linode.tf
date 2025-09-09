@@ -291,7 +291,7 @@ resource "linode_firewall" "warden_firewall" {
 resource "linode_instance" "anf_containers" {
   label            = "anf_containers"
   region           = "us-west"
-  type             = "g6-nanode-1"
+  type             = "g6-standard-1"
   authorized_users = [data.linode_profile.me.username]
   image            = "linode/alpine3.19"
   backups_enabled  = true
